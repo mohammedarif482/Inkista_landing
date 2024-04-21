@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* Linear gradient background */
+  background: linear-gradient(
+    to bottom right,
+    #ec78ee,
+    white 30%,
+    white 70%,
+    white 30%,
+    #927597
+  );
+  /* Ensure content takes up the full height of the viewport */
+  min-height: 100vh;
+
+  /* Padding to prevent content from touching the edges */
+  padding: 20px;
+  /* Font styles */
+  font-family: Arial, sans-serif;
+  color: #333; /* Text color */
+  /* overflow-y: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+.main-wrapper-right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.inkista-logo {
+  height: 100px;
+  width: 100px;
+}
+.computer-boy-image {
+  /* height: 156px; */
+  max-width: 156px;
+  width: 100%;
+}
+.coming-soon-text {
+  max-width: 300px;
+  width: 100%;
+}
+.read-story-text {
+  max-width: 500px;
+  width: 100%;
+}
+.social-media-icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 50px;
+}
+.social-media-icons-wrapper img {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+.main-wrapper-right-section img {
+  /* max-width: 500px; */
+  /* width: 100%; */
+}
+.main-banner-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-wrapper-right-section img {
+    max-width: 315px;
+  }
+  .social-media-icons-wrapper {
+    padding-top: 0px;
+  }
+  .main-wrapper-right-section {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main-left {
+    display: none;
+  }
+  .main-banner-mobile {
+    display: flex;
+  }
+  .main-banner-mobile img {
+    max-width: 250px;
+    height: auto;
+    width: 100%;
+  }
+  .main-wrapper-right-section img {
+    max-width: 200px;
+  }
+}
